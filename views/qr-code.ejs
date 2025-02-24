@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR-Code</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<form action="/generate-qr" method="POST">
+    <input type="text" name="text" placeholder="Enter text for QR code" required>
+    <button type="submit">Create QR</button>
+</form>
+
+<% if (qrImage) { %>
+    <img src="<%= qrImage %>" alt="QR Code">
+<% } %>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<form action="/add" method="POST">
+    <input type="text" name="name" placeholder="Message">
+    <button type="submit">Create</button>
+</form>
+
+<ul>
+    <% items.forEach(item => { %>
+        <li>
+            <%= item.name %>
+            <form action="/edit/<%= item._id %>" method="POST" style="display:inline;">
+                <input type="text" name="newName" placeholder="Change">
+                <button type="submit">Update</button>
+            </form>
+            <form action="/delete/<%= item._id %>" method="POST" style="display:inline;">
+                <button type="submit">Delete</button>
+            </form>
+        </li>
+    <% }); %>
+</ul>
+
+</body>
+</html>

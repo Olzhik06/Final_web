@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+button, .btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+button:hover, .btn:hover {
+    background: #0056b3;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+th {
+    background: #007bff;
+    color: white;
+}
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background: #0056b3;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar a:hover {
+    background: #0056b3;
+    border-radius: 5px;
+}
+.navbar a.logout {
+    background: red;
+    border-radius: 5px;
+}
+.navbar a.logout:hover {
+    background: darkred;
+}
